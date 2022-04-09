@@ -77,13 +77,13 @@ def airport_passport(number):
                     print(push)
                     print("No."+str(number + 1) + ' SUCCESS')
                 except:
-                    print('Failed to get usage data' + response.status_code)
+                    print('Failed to get usage data' + str(response.status_code))
             else:
                 print('Check in failed ' + msg.status_code)
         except:
             print('Check in failed ')
     else:
-        print('Login failed ' + response.status_code)
+        print('Login failed ' + str(response.status_code))
 
 
 if __name__ == '__main__':
